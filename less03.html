@@ -99,10 +99,9 @@
 				return num;
 			}
 			function iseeintoyoursoul(x1,y1,x2,y2) { // #SuddenNames
-				alert('coords: '+x1+' '+y1+' '+x2+' '+y2);
 				var xm=(x1+x2)/2, ym=(y1+y2)/2, sum=0, s1=0, s2=0;
 				var b1=table(x1,y1), b2=table(x2,y2);
-				var b=[]; for (i=0; i<4; i++) b[i]=b1[i]&&b2[i]; //alert(xm+' '+Math.ceil(xm));
+				var b=[]; for (i=0; i<4; i++) b[i]=b1[i]&&b2[i];
 				if ((decimall(xm)<0.5)&&(ym>cut[1]))
 					xm=xm|0; else xm=Math.ceil((xm)*10)/10;
 				if ((decimall(ym)<0.5)&&(ym<cut[2])) ym=ym|0; else ym=Math.ceil((ym)*100)/100;
@@ -145,10 +144,6 @@
 					reabris();
 					kant=1; count=0; xs=[]; ys=[];
 				}
-				if (y<ytop) ytop=y;
-				if (x<xleft) xleft=x;
-				if (x>xright) xright=x;
-				if (y>ybtm) ybtm=y;
 				if (count == 0) {
 					xz=x;
 					yz=y;
